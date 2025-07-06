@@ -1,0 +1,144 @@
+/* reset - O reset remove estilos 
+padrões do HTML para que você possa 
+criar seu design do zero, com controle 
+total dos estilos no seu projeto — e 
+não depender do que o navegador decidiu 
+aplicar por padrão. */
+
+* {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove espaçamentos internos padrão */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f0ebf8;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #333;
+}
+
+p, label {
+    color: #444;
+}
+
+/* Estiliza os campos de input */
+input {
+    border: none; /* Remove todas as bordas padrão */
+    border-bottom: 1px solid #ccc; /* Cria apenas uma borda inferior cinza clara */
+    padding: 10px 0; /* Espaçamento vertical interno */
+}
+
+/* Define uma largura padrão para campos de texto, número, data e arquivo */
+input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="file"],
+textarea {
+    width: 400px; /* Largura fixa de 400px */
+}
+
+.textarea {
+    padding: 10px 5px;
+}
+
+/* Estilização do cabeçalho */
+.header {
+    height: 160px; /* Altura total do cabeçalho */
+    padding: 20px; /* Espaçamento interno (padding) */
+    background-color: #673ab7;
+}
+
+.header h3 {
+    color: #fff;
+    margin-top: 0; /* Remove espaço extra acima do título */
+}
+
+/* Estilização do container do formulário */
+.form-container {
+    background-color: #fdfdfd;
+    width: 60%; /* Ocupa 60% da largura da tela */
+    margin: 0 auto; /* Centraliza horizontalmente a div com base no width */
+    position: relative; /* Permite mover o elemento com "top" */
+    top: -62px; /* Move o formulário 62px para cima, sobrepondo o cabeçalho */
+}
+
+/* Cabeçalho do formulário */
+.form-header {
+    border-bottom: 1px solid #dfdfdf; /* Linha cinza clara embaixo do cabeçalho */
+    height: 45px;                     /* Altura fixa do cabeçalho */
+}
+
+.form-header p {
+    color: #673ab7;                   /* Cor roxa do texto */
+    border-bottom: 2px solid #673ab7;/* Linha roxa mais grossa embaixo do parágrafo */
+    width: 100px;                     /* Largura do parágrafo */
+    height: 45px;                     /* Altura igual ao cabeçalho */
+    text-align: center;              /* Centraliza o texto */
+    margin: 0 auto;                  /* Centraliza horizontalmente */
+    text-transform: uppercase;       /* Deixa o texto em letras maiúsculas */
+    line-height: 45px;               /* Centraliza verticalmente o texto */
+}
+
+/* Corpo do formulário */
+.form-body {
+    padding: 30px;                   /* Espaço interno (dentro do corpo) */
+}
+
+.form-title {
+    height: 45px;                    /* Altura do título */
+}
+
+.form-body p {
+    margin-bottom: 20px;            /* Espaço abaixo dos parágrafos */
+}
+
+.required-field {
+    color: #f00;                     /* Cor vermelha para destacar campos obrigatórios */
+}
+
+.box-input {
+    margin-bottom: 35px;            /* Espaço entre os campos do formulário */
+}
+
+.block {
+    display: block;                 /* Faz com que o elemento ocupe a linha toda */
+}
+
+/* Caixa de itens opcionais (como checkboxes) */
+.optional-box {
+    display: inline-block;          /* Ficam um ao lado do outro se houver espaço */
+    margin: 0 30px 30px 0;          /* Margem direita e inferior */
+}
+
+.optional-list {
+    list-style: none;              /* Remove bolinhas da lista */
+    margin-bottom: 5px;            /* Pequeno espaço abaixo da lista */
+}
+
+.box-input p {
+    margin-bottom: 15px;          /* Espaço abaixo do parágrafo do label */
+}
+
+/* Botão de envio */
+.btn-submit {
+    background-color: #673ab7;    /* Cor de fundo roxa */
+    color: #fff;                  /* Cor do texto: branco */
+    border: 2px solid transparent;/* Borda invisível por padrão */
+    width: 150px;                 /* Largura fixa do botão */
+    height: 50px;                 /* Altura fixa */
+    cursor: pointer;             /* Cursor vira mãozinha */
+    text-transform: uppercase;   /* Texto do botão em maiúsculas */
+    transition: 0.5s;            /* Suaviza a animação de hover */
+}
+
+.btn-submit:hover {
+    background-color: #fff;       /* Fica branco ao passar o mouse */
+    border-color: #673ab7;        /* Mostra borda roxa */
+    color: #673ab7;               /* Texto roxo */
+}
