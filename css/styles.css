@@ -1,144 +1,142 @@
-/* reset - O reset remove estilos 
-padrões do HTML para que você possa 
-criar seu design do zero, com controle 
-total dos estilos no seu projeto — e 
-não depender do que o navegador decidiu 
-aplicar por padrão. */
-
+/* RESET GERAL - tira os estilos padrão do navegador para deixar tudo limpinho */
 * {
-    margin: 0; /* Remove margens padrão */
-    padding: 0; /* Remove espaçamentos internos padrão */
-    font-family: Arial, Helvetica, sans-serif;
+    margin: 0; /* Tira as margens externas */
+    padding: 0; /* Tira os espaçamentos internos */
+    font-family: Arial, Helvetica, sans-serif; /* Define a fonte usada no site */
 }
 
 body {
-    background-color: #f0ebf8;
+    background-color: #f0ebf8; /* Cor de fundo clarinha (lilás suave) */
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+/* Todos os títulos vão ter cor cinza escuro */
+h1, h2, h3, h4, h5 {
     color: #333;
 }
 
+/* Parágrafos e textos de rótulo (label) vão ser cinza médio */
 p, label {
     color: #444;
 }
 
-/* Estiliza os campos de input */
+/* Estilo básico para os campos de formulário */
 input {
-    border: none; /* Remove todas as bordas padrão */
-    border-bottom: 1px solid #ccc; /* Cria apenas uma borda inferior cinza clara */
-    padding: 10px 0; /* Espaçamento vertical interno */
+    border: none; /* Tira a borda padrão */
+    border-bottom: 1px solid #ccc; /* Coloca só uma linha cinza embaixo */
+    padding: 10px 0; /* Espaço dentro do campo, em cima e embaixo */
 }
 
-/* Define uma largura padrão para campos de texto, número, data e arquivo */
+/* Define a largura de vários tipos de campo */
 input[type="text"],
 input[type="number"],
 input[type="date"],
 input[type="file"],
 textarea {
-    width: 400px; /* Largura fixa de 400px */
+    width: 400px; /* Todos esses campos vão ter 400px de largura */
 }
 
+/* Espaço interno para o campo de texto maior */
 .textarea {
     padding: 10px 5px;
 }
 
-/* Estilização do cabeçalho */
+/* Estilo da parte roxa de cima do site */
 .header {
-    height: 160px; /* Altura total do cabeçalho */
-    padding: 20px; /* Espaçamento interno (padding) */
-    background-color: #673ab7;
+    height: 160px; /* Altura do cabeçalho */
+    padding: 20px; /* Espaço dentro dele */
+    background-color: #673ab7; /* Cor de fundo roxa */
 }
 
 .header h3 {
-    color: #fff;
-    margin-top: 0; /* Remove espaço extra acima do título */
+    color: #fff; /* Texto branco */
+    margin-top: 0; /* Tira espaço acima do texto */
 }
 
-/* Estilização do container do formulário */
+/* Área branca onde fica o formulário */
 .form-container {
-    background-color: #fdfdfd;
-    width: 60%; /* Ocupa 60% da largura da tela */
-    margin: 0 auto; /* Centraliza horizontalmente a div com base no width */
-    position: relative; /* Permite mover o elemento com "top" */
-    top: -62px; /* Move o formulário 62px para cima, sobrepondo o cabeçalho */
+    background-color: #fdfdfd; /* Fundo branco */
+    width: 60%; /* Ocupa 60% da tela */
+    margin: 0 auto; /* Centraliza no meio da tela */
+    position: relative; /* Permite ajustar a posição com "top" */
+    top: -62px; /* Sobe um pouco o formulário pra "colar" no topo roxo */
 }
 
-/* Cabeçalho do formulário */
+/* Faixa com o nome "Formulário" */
 .form-header {
-    border-bottom: 1px solid #dfdfdf; /* Linha cinza clara embaixo do cabeçalho */
-    height: 45px;                     /* Altura fixa do cabeçalho */
+    border-bottom: 1px solid #dfdfdf; /* Linha cinza clara embaixo */
+    height: 45px; /* Altura fixa da faixa */
 }
 
 .form-header p {
-    color: #673ab7;                   /* Cor roxa do texto */
-    border-bottom: 2px solid #673ab7;/* Linha roxa mais grossa embaixo do parágrafo */
-    width: 100px;                     /* Largura do parágrafo */
-    height: 45px;                     /* Altura igual ao cabeçalho */
-    text-align: center;              /* Centraliza o texto */
-    margin: 0 auto;                  /* Centraliza horizontalmente */
-    text-transform: uppercase;       /* Deixa o texto em letras maiúsculas */
-    line-height: 45px;               /* Centraliza verticalmente o texto */
+    color: #673ab7; /* Texto roxo */
+    border-bottom: 2px solid #673ab7; /* Linha roxa grossa por baixo */
+    width: 100px; /* Largura da palavra "Formulário" */
+    height: 45px; /* Altura igual ao header */
+    text-align: center; /* Centraliza o texto no meio */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    text-transform: uppercase; /* Deixa em letras maiúsculas */
+    line-height: 45px; /* Centraliza o texto na vertical */
 }
 
-/* Corpo do formulário */
+/* Parte interna do formulário (campos e textos) */
 .form-body {
-    padding: 30px;                   /* Espaço interno (dentro do corpo) */
+    padding: 30px; /* Espaço interno */
 }
 
 .form-title {
-    height: 45px;                    /* Altura do título */
+    height: 45px; /* Altura do título principal */
 }
 
 .form-body p {
-    margin-bottom: 20px;            /* Espaço abaixo dos parágrafos */
+    margin-bottom: 20px; /* Espaço depois de cada parágrafo */
 }
 
 .required-field {
-    color: #f00;                     /* Cor vermelha para destacar campos obrigatórios */
+    color: #f00; /* Coloca texto vermelho para indicar que é obrigatório */
 }
 
+/* Espaço entre os campos do formulário */
 .box-input {
-    margin-bottom: 35px;            /* Espaço entre os campos do formulário */
+    margin-bottom: 35px;
 }
 
+/* Faz os campos ficarem um embaixo do outro */
 .block {
-    display: block;                 /* Faz com que o elemento ocupe a linha toda */
+    display: block;
 }
 
-/* Caixa de itens opcionais (como checkboxes) */
+/* Caixas com as opções do tipo checkbox (ex: opcionais do carro) */
 .optional-box {
-    display: inline-block;          /* Ficam um ao lado do outro se houver espaço */
-    margin: 0 30px 30px 0;          /* Margem direita e inferior */
+    display: inline-block; /* Ficam lado a lado se couberem */
+    margin: 0 30px 30px 0; /* Espaço à direita e embaixo */
 }
 
+/* Tira as bolinhas da lista de opcionais */
 .optional-list {
-    list-style: none;              /* Remove bolinhas da lista */
-    margin-bottom: 5px;            /* Pequeno espaço abaixo da lista */
+    list-style: none;
+    margin-bottom: 5px;
 }
 
+/* Espaço entre o texto da pergunta e os campos */
 .box-input p {
-    margin-bottom: 15px;          /* Espaço abaixo do parágrafo do label */
+    margin-bottom: 15px;
 }
 
-/* Botão de envio */
+/* Botão para enviar o formulário */
 .btn-submit {
-    background-color: #673ab7;    /* Cor de fundo roxa */
-    color: #fff;                  /* Cor do texto: branco */
-    border: 2px solid transparent;/* Borda invisível por padrão */
-    width: 150px;                 /* Largura fixa do botão */
-    height: 50px;                 /* Altura fixa */
-    cursor: pointer;             /* Cursor vira mãozinha */
-    text-transform: uppercase;   /* Texto do botão em maiúsculas */
-    transition: 0.5s;            /* Suaviza a animação de hover */
+    background-color: #673ab7; /* Fundo roxo */
+    color: #fff; /* Texto branco */
+    border: 2px solid transparent; /* Sem borda aparente no começo */
+    width: 150px; /* Largura do botão */
+    height: 50px; /* Altura do botão */
+    cursor: pointer; /* Muda o cursor para uma mãozinha */
+    text-transform: uppercase; /* Texto do botão em maiúsculas */
+    transition: 0.5s; /* Efeito suave ao passar o mouse */
 }
 
+/* Quando passar o mouse no botão */
 .btn-submit:hover {
-    background-color: #fff;       /* Fica branco ao passar o mouse */
-    border-color: #673ab7;        /* Mostra borda roxa */
-    color: #673ab7;               /* Texto roxo */
+    background-color: #fff; /* Fundo fica branco */
+    border-color: #673ab7; /* Mostra a borda roxa */
+    color: #673ab7; /* Texto roxo */
 }
